@@ -1,4 +1,4 @@
-@mainColor: #e92322; // Appears 22 times
+﻿@mainColor: #e92322; // Appears 22 times
 @color1: #666666; // Appears 14 times
 @color2: #c0c0c0; // Appears 9 times
 @color3: #ffffff; // Appears 8 times
@@ -27,13 +27,13 @@ body {
 /*定义字体*/
 
 @font-face {
-    font-family: 'itcast';
+    font-family: 'demo';
     src: url(../fonts/MiFie-Web-Font.eot) format("embedded-opentype"), url(../fonts/MiFie-Web-Font.ttf) format("truetype"), url(../fonts/MiFie-Web-Font.svg) format("svg"), url(../fonts/MiFie-Web-Font.woff) format("woff");
 }
 
 [class^="icon-"],
 [class*=" icon-"] {
-    font-family: 'itcast';
+    font-family: 'demo';
     font-style: normal;
 }
 
@@ -402,7 +402,7 @@ body {
                         }
                         &::before {
                             content: "\e915";
-                            font-family: 'itcast';
+                            font-family: 'demo';
                             font-size: 40px;
                             position: absolute;
                             left: 0.16rem;
@@ -579,7 +579,7 @@ fieldset[disabled] .btn-register.active {
 
 /* 自定义导航条 */
 
-.navbar-itcast {
+.navbar-demo {
     background-color: #fff;
     border-color: #f5f5f5;
     border-top: 0;
@@ -589,119 +589,119 @@ fieldset[disabled] .btn-register.active {
     top: 0;
 }
 
-.navbar-itcast .navbar-brand {
+.navbar-demo .navbar-brand {
     color: @color1;
     line-height: 0.4rem;
     height: 0.8rem;
 }
 
-.navbar-itcast .navbar-brand:hover,
-.navbar-itcast .navbar-brand:focus {
+.navbar-demo .navbar-brand:hover,
+.navbar-demo .navbar-brand:focus {
     color: @color11;
     background-color: transparent;
 }
 
-.navbar-itcast .navbar-text {
+.navbar-demo .navbar-text {
     color: @color1;
 }
 
-.navbar-itcast .navbar-nav > li > a {
+.navbar-demo .navbar-nav > li > a {
     line-height: 0.48rem;
     color: @color1;
     font-size: 0.14rem;
     border-bottom: 2px solid transparent;
 }
 
-.navbar-itcast .navbar-nav > li > a:hover,
-.navbar-itcast .navbar-nav > li > a:focus {
+.navbar-demo .navbar-nav > li > a:hover,
+.navbar-demo .navbar-nav > li > a:focus {
     color: @color1;
     background-color: transparent;
     border-bottom: 2px solid @mainColor;
 }
 
-.navbar-itcast .navbar-nav > .active > a,
-.navbar-itcast .navbar-nav > .active > a:hover,
-.navbar-itcast .navbar-nav > .active > a:focus {
+.navbar-demo .navbar-nav > .active > a,
+.navbar-demo .navbar-nav > .active > a:hover,
+.navbar-demo .navbar-nav > .active > a:focus {
     color: @color1;
     background-color: transparent;
 }
 
-.navbar-itcast .navbar-nav > .disabled > a,
-.navbar-itcast .navbar-nav > .disabled > a:hover,
-.navbar-itcast .navbar-nav > .disabled > a:focus {
+.navbar-demo .navbar-nav > .disabled > a,
+.navbar-demo .navbar-nav > .disabled > a:hover,
+.navbar-demo .navbar-nav > .disabled > a:focus {
     color: #ccc;
     background-color: transparent;
 }
 
-.navbar-itcast .navbar-toggle {
+.navbar-demo .navbar-toggle {
     margin-top: 23px;
     border-color: #ddd;
 }
 
-.navbar-itcast .navbar-toggle:hover,
-.navbar-itcast .navbar-toggle:focus {
+.navbar-demo .navbar-toggle:hover,
+.navbar-demo .navbar-toggle:focus {
     background-color: #ddd;
 }
 
-.navbar-itcast .navbar-toggle .icon-bar {
+.navbar-demo .navbar-toggle .icon-bar {
     background-color: @color1;
 }
 
-.navbar-itcast .navbar-collapse,
-.navbar-itcast .navbar-form {
+.navbar-demo .navbar-collapse,
+.navbar-demo .navbar-form {
     border-color: @color4;
 }
 
-.navbar-itcast .navbar-nav > .open > a,
-.navbar-itcast .navbar-nav > .open > a:hover,
-.navbar-itcast .navbar-nav > .open > a:focus {
+.navbar-demo .navbar-nav > .open > a,
+.navbar-demo .navbar-nav > .open > a:hover,
+.navbar-demo .navbar-nav > .open > a:focus {
     color: #555;
     background-color: @color4;
 }
 
 @media (max-width: 767px) {
-    .navbar-itcast .navbar-nav .open .dropdown-menu > li > a {
+    .navbar-demo .navbar-nav .open .dropdown-menu > li > a {
         color: @color1;
     }
-    .navbar-itcast .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-itcast .navbar-nav .open .dropdown-menu > li > a:focus {
+    .navbar-demo .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-demo .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #333;
         background-color: transparent;
     }
-    .navbar-itcast .navbar-nav .open .dropdown-menu > .active > a,
-    .navbar-itcast .navbar-nav .open .dropdown-menu > .active > a:hover,
-    .navbar-itcast .navbar-nav .open .dropdown-menu > .active > a:focus {
+    .navbar-demo .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-demo .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-demo .navbar-nav .open .dropdown-menu > .active > a:focus {
         color: #555;
         background-color: @color4;
     }
-    .navbar-itcast .navbar-nav .open .dropdown-menu > .disabled > a,
-    .navbar-itcast .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-    .navbar-itcast .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    .navbar-demo .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-demo .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-demo .navbar-nav .open .dropdown-menu > .disabled > a:focus {
         color: #ccc;
         background-color: transparent;
     }
 }
 
-.navbar-itcast .navbar-link {
+.navbar-demo .navbar-link {
     color: @color1;
 }
 
-.navbar-itcast .navbar-link:hover {
+.navbar-demo .navbar-link:hover {
     color: #333;
 }
 
-.navbar-itcast .btn-link {
+.navbar-demo .btn-link {
     color: @color1;
 }
 
-.navbar-itcast .btn-link:hover,
-.navbar-itcast .btn-link:focus {
+.navbar-demo .btn-link:hover,
+.navbar-demo .btn-link:focus {
     color: #333;
 }
 
-.navbar-itcast .btn-link[disabled]:hover,
-fieldset[disabled] .navbar-itcast .btn-link:hover,
-.navbar-itcast .btn-link[disabled]:focus,
-fieldset[disabled] .navbar-itcast .btn-link:focus {
+.navbar-demo .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-demo .btn-link:hover,
+.navbar-demo .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-demo .btn-link:focus {
     color: #ccc;
 }
