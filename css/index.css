@@ -35,7 +35,7 @@ body {
 .icon-icon::before {
   font-size: 0.5rem;
   content: "\e920";
-  color: #e92322;
+  color: #bce8f5;
   vertical-align: middle;
 }
 .icon-uniE906:before {
@@ -179,7 +179,7 @@ body {
   text-decoration: none;
 }
 #tese .row > div a:hover {
-  color: #e92322;
+  color: #bce8f5;
 }
 #tese .row > div a p {
   font-size: 0.13rem;
@@ -195,12 +195,12 @@ body {
   font-size: 0.14rem;
 }
 #ljyy > .container > .pull-left > span {
-  color: #e92322;
+  color: #bce8f5;
 }
 #ljyy > .container > .pull-left > a {
-  color: #e92322;
+  color: #bce8f5;
   text-decoration: none;
-  border-bottom: 1px dashed #e92322;
+  border-bottom: 1px dashed #bce8f5;
 }
 /* 产品推荐 */
 #products {
@@ -231,7 +231,7 @@ body {
 }
 #products > .container > .ul-wapper > .nav-tabs > li.active > a {
   background-color: transparent;
-  border-bottom: 3px solid #e92322;
+  border-bottom: 3px solid #bce8f5;
 }
 #products > .container > .tab-content {
   padding: 0.2rem 0;
@@ -283,12 +283,12 @@ body {
   font-weight: 600;
 }
 #products > .container > .tab-content > .tab-pane .panel > .panel-heading > p.tooltips > .tool-one {
-  border: 1px solid #e92322;
-  color: #e92322;
+  border: 1px solid #bce8f5;
+  color: #bce8f5;
 }
 #products > .container > .tab-content > .tab-pane .panel > .panel-heading > p.tooltips > .tool-two {
-  border: 1px solid #0f0;
-  color: #0f0;
+  border: 1px solid #ffe5f2;
+  color: #ffe5f2;
 }
 #products > .container > .tab-content > .tab-pane .panel > .panel-body {
   margin-right: 1.2rem;
@@ -297,17 +297,23 @@ body {
 #products > .container > .tab-content > .tab-pane .panel > .panel-body > .row > div {
   margin: 5px 0px;
 }
+#products > .container > .tab-content > .tab-pane .panel > .panel-body > .row > .text-left{
+  padding-right: 0!important;
+}
+#products > .container > .tab-content > .tab-pane .panel > .panel-body > .row > .text-right {
+  padding-left: 0!important;
+}
 #products > .container > .tab-content > .tab-pane .panel > .panel-body > .row > div > p {
   margin-bottom: 0;
   font-size: 0.14rem;
 }
 #products > .container > .tab-content > .tab-pane .panel.actived {
   color: #fff;
-  background-color: #e92322;
+  background-color: #bce8f5;
 }
 #products > .container > .tab-content > .tab-pane .panel.actived > .panel-heading {
   color: #fff;
-  background-color: #e92322;
+  background-color: #bce8f5;
 }
 #products > .container > .tab-content > .tab-pane .panel.actived::before {
   content: "\e915";
@@ -315,7 +321,7 @@ body {
   font-size: 40px;
   position: absolute;
   left: 0.16rem;
-  top: -0.1rem;
+  top: -0.08rem;
 }
 @media (max-width: 768px) {
   .ul-wapper {
@@ -346,17 +352,17 @@ body {
   border-bottom: 0;
 }
 #news > .container > .row > div > .nav-tabs > li {
-  margin-bottom: 0.1rem;
+  margin: 0.1rem 0;
 }
 #news > .container > .row > div > .nav-tabs > li > a {
   border-radius: 0.3rem;
   border: 0;
 }
 #news > .container > .row > div > .nav-tabs > li > a:hover {
-  background-color: #e92322;
+  background-color: #bce8f5;
 }
 #news > .container > .row > div > .nav-tabs > li.active a {
-  background-color: #e92322;
+  background-color: #bce8f5;
 }
 #news > .container > .row > div > .tab-content > .tab-pane > ul > li {
   list-style: none;
@@ -391,7 +397,7 @@ body {
   color: #666;
 }
 #partner > .container > ul > li > a:hover > i {
-  color: #e92322;
+  color: #bce8f5;
 }
 #partner > .container > ul > li + li {
   border-left: 1px dashed #c0c0c0;
@@ -400,8 +406,8 @@ body {
 /* 自定义按钮 */
 .btn-register {
   color: #ffffff;
-  background-color: #e92322;
-  border-color: #e92322;
+  background-color: #bce8f5;
+  border-color: #bce8f5;
 }
 .btn-register:hover,
 .btn-register:focus,
@@ -409,8 +415,8 @@ body {
 .btn-register.active,
 .open .dropdown-toggle.btn-register {
   color: #ffffff;
-  background-color: #e92322;
-  border-color: #e92322;
+  background-color: #bce8f5;
+  border-color: #bce8f5;
 }
 .btn-register:active,
 .btn-register.active,
@@ -432,11 +438,11 @@ fieldset[disabled] .btn-register:active,
 .btn-register.disabled.active,
 .btn-register[disabled].active,
 fieldset[disabled] .btn-register.active {
-  background-color: #e92322;
-  border-color: #e92322;
+  background-color: #bce8f5;
+  border-color: #bce8f5;
 }
 .btn-register .badge {
-  color: #e92322;
+  color: #bce8f5;
   background-color: #ffffff;
 }
 /* 自定义导航条 */
@@ -472,7 +478,7 @@ fieldset[disabled] .btn-register.active {
 .navbar-demo .navbar-nav > li > a:focus {
   color: #666666;
   background-color: transparent;
-  border-bottom: 2px solid #e92322;
+  border-bottom: 2px solid #bce8f5;
 }
 .navbar-demo .navbar-nav > .active > a,
 .navbar-demo .navbar-nav > .active > a:hover,
