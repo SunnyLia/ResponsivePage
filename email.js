@@ -2,15 +2,12 @@ const nodemailer = require("nodemailer");
 const schedule = require('node-schedule');
 const superagent = require('superagent')
 const cheerio = require('cheerio')
-var charset = require("superagent-charset");
+const charset = require("superagent-charset");
 charset(superagent); //设置字符
 
-var sendDate = "0 15 13 * * *";//设置发送时间
+var sendDate = "0 0 9 * * *";//设置发送时间
 var fromPerson = "张张你大爷<1218294773@qq.com>" //发送者
 var toPerson = "1326155622@qq.com" //接收者。可以发送多个用户，用逗号隔开
-var subject = "2020/3/30新闻汇总" //主题
-var content = "爱你的第n天" //内容
-
 
 /* 发送邮件 */
 function sendMail(from, to, subject, content) {
@@ -62,9 +59,9 @@ schedule参数讲解
 
 /* 定时发送 */
 // function scheduleCronstyle() {
-schedule.scheduleJob(sendDate, () => {
+// schedule.scheduleJob(sendDate, () => {
     getNews()
-});
+// });
 // }
 
 /*爬取人民网新闻*/
@@ -74,12 +71,13 @@ function getNews() {
             console.log(`热点新闻抓取失败 - ${err}`)
         } else {
             let $ = cheerio.load(res.text, { decodeEntities: false });
-            var hotNews = "";
+            let content = "";
             $('table .anavy').each((idx, ele) => {
-                hotNews += '<li><a href="' + $(ele).attr("href") + '">' + $(ele).text() + '</a></li>'
+                content += '<li><a href="' + $(ele).attr("href") + '" style="font-size:12px">' + $(ele).text() + '</a></li>'
             });
+            let subject = $(".t12l12blackb")[0] //主题
 
-            sendMail(fromPerson, toPerson, subject, '<ul>' + hotNews + '</ul>')
+            sendMail(fromPerson, toPerson, $(subject).text() + ' | 新闻早报', '<ul>' + content + '</ul>')
         }
     });
 }
